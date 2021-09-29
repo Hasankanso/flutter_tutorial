@@ -5,12 +5,14 @@ part 'User.g.dart';
 @HiveType(typeId: 0)
 class User {
   @HiveField(0)
-  String name;
+  final String name;
 
   @HiveField(1)
-  String phoneNumber;
+  final String phoneNumber;
 
-  User(this.name, this.phoneNumber);
+  final String? firebaseToken;
+
+  User(this.name, this.phoneNumber, {this.firebaseToken});
 
   @override
   bool operator ==(Object other) =>

@@ -24,6 +24,7 @@ dependencies:
   hive: ^2.0.4
   hive_flutter: ^1.1.0
   firebase_core: ^1.4.0
+  firebase_auth: ^3.1.1
   flutter:
     sdk: flutter
 

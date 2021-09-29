@@ -16,6 +16,6 @@ class MyAppStorage extends InheritedWidget {
 
   @override
   bool updateShouldNotify(MyAppStorage old) {
-    return user.name == old.user.name && user.phoneNumber == old.user.phoneNumber;
+    return user.name != old.user.name || user.phoneNumber != old.user.phoneNumber;
   }
 }
